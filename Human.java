@@ -18,8 +18,8 @@ public class Human {
     }
 
     enum Gender{
-        men("Мужчина"),
-        women("Женщина");
+        MAN("Мужчина"),
+        WOMAN("Женщина");
         private String gender;
         Gender(String gender){
             this.gender = gender;
