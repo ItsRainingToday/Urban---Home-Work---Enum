@@ -1,51 +1,48 @@
 public class Alphabet {
-    int position;
-    World world;
-    public Alphabet(int position, World world){
-        this.position = position;
-        this.world = world;
+    Word word;
+    public Alphabet(Word world){
+        this.word = word;
     }
     @Override
     public String toString() {
         return "Alphabet{" +
-                "position=" + position +
-                ", world=" + world.getWorld() +
+                "position=" + (word.ordinal()+1)+
+                ", world=" + word.getWord() +
                 '}';
     }
-    enum World{
-        a("A"),
-        b("B"),
-        c("C"),
-        d("D"),
-        e("E"),
-        f("F"),
-        g("G"),
-        h("H"),
-        i("I"),
-        j("J"),
-        k("K"),
-        l("L"),
-        m("M"),
-        n("N"),
-        o("O"),
-        p("P"),
-        q("Q"),
-        r("R"),
-        s("S"),
-        t("T"),
-        u("U"),
-        v("V"),
-        w("W"),
-        x("X"),
-        y("Y"),
-        z("Z");
-        private String world;
-        World(String world){
-            this.world = world;
+    enum Word {
+        A("A"),
+        B("B"),
+        C("C"),
+        D("D"),
+        E("E"),
+        F("F"),
+        G("G"),
+        H("H"),
+        I("I"),
+        J("J"),
+        K("K"),
+        L("L"),
+        M("M"),
+        N("N"),
+        O("O"),
+        P("P"),
+        Q("Q"),
+        R("R"),
+        S("S"),
+        T("T"),
+        U("U"),
+        V("V"),
+        W("W"),
+        X("X"),
+        Y("Y"),
+        Z("Z");
+        private String word;
+        Word(String word){
+            this.word = word;
         }
-        public String getWorld(){
-            return world;
+        public String getWord(){
+            return word;
         }
     }
 }
-
